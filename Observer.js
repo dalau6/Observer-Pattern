@@ -4,3 +4,7 @@ function Observer(){
     // ...
   };
 }
+
+module.export = {
+  Observer: new Observer(),
+}
