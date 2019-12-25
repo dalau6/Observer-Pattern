@@ -32,3 +32,7 @@ ObserverList.prototype.indexOf = function(obj, startIndex) {
 ObserverList.prototype.removeAt = function(index) {
   this.observerList.splice(index, 1);
 };
+
+module.export = {
+  ObserverList: new ObserverList(),
+}

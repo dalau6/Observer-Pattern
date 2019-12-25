@@ -1,5 +1,7 @@
+const ObserverList = require('./ObserverList');
+
 function Subject() {
-  this.observers = new ObserverList();
+  this.observers = ObserverList;
 }
 
 Subject.prototype.addObserver = function(observer) {
@@ -16,3 +18,7 @@ Subject.prototype.notify = function(context) {
     this.observers.get(i).update(context);
   }
 };
+
+module.export = {
+  Subject: new Subject(),
+}
